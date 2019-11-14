@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "PassViewBag";
+    string Nickname = ViewBag.Nickname;
+    var Height = ViewBag.Height;
+    decimal Weight = ViewBag.Weight;
+    bool Married = ViewBag.Married;
+
+    int i = 0;
+}
+
+<h2>PassViewBag</h2>
+
+<ul>
+    <li>@ViewBag.Nickname</li>
+    <li>@(ViewBag.Height+1)</li>
+    <li>@(ViewBag.Weight+10)</li>
+    <li>@ViewBag.Married</li>
+</ul>
